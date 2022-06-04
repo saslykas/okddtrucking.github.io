@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>OKDD TRUCKING WEBSITE</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="page">
+            <div id="topbar">
+                <header>
+                    <h1>OKDD TRUCKING WEBSITE</h1>
+                    <h2></h2>
+                </header>
+            </div>
+            <div id="flex-container">
+                <div id="left-sidebar">
+                    <ul class="sb-list">
+                        <li class="sb-item"><a href="https://truckersmp.com/vtc/45417" class="sb-button">VTC Puslapis</a></li>
+                        <li class="sb-item"><a href="https://saslykas.tk" class="sb-button">saslykas.tk</a></li>
+                        <li class="sb-item"><a onclick="changePage(this.hash)" href="#registracija" class="sb-button">Registracija</a></li>
+                    </ul>
+                </div>
+                <div id="content">
+                </div>
+                <div id="right-sidebar">
+                    <ul class="sb-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+
+            function changePage(href) {
+                fetch(href.substr(1)+'.html')
+                .then(response => response.text())
+                .then(data => {
+                    let content = document.querySelector('#content')
+                    content.innerHTML = data
+                });
+                return false;
+            }
+            document.addEventListener("DOMContentLoaded", () => {changePage('#posts')})
+        </script>
+    </body>
+
+</html>

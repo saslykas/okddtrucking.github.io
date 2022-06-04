@@ -1,0 +1,111 @@
+iframe {
+    flex: 1 0 auto;
+}
+body {
+    margin: 0;
+    font-family:Verdana;
+    background-color:#36393f;
+    color:white;
+    height: 100vh;
+}
+
+#topbar {
+    background-color: rgb(140, 0, 255);
+    /*background-image: linear-gradient(rgb(140, 0, 255), rgb(82, 146, 230));*/
+    background: url(https://truckersmp.com/assets/img/bg/25.jpg) center no-repeat;
+    text-align:center;
+    color: white;
+    padding: 5rem 6rem;
+}
+
+#page {
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#flex-container {
+    display:flex;
+    flex-direction:row;
+    flex: 1 0 auto;
+}
+
+#left-sidebar {
+    background: #2f3136;
+}
+
+#right-sidebar { 
+    width: 20rem;
+    background: #2f3136;
+}
+
+
+#content {
+    flex: 1 0 auto;
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.sb-list {
+    display:flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 0px;
+    list-style: none;
+}
+
+.sb-button {
+    text-decoration: none;
+    color:white;
+    display:flex;
+    flex:1 1 auto;
+    justify-content: center;
+    align-items: center;
+    width:12rem;
+    height:4rem;
+    border-radius: 1rem;
+}
+
+.sb-item {
+    list-style:none;
+}
+
+.sb-button:hover {
+    background-color: rgb(79, 79, 117);
+    /*background-image: linear-gradient(rgb(140, 0, 255), rgb(82, 146, 230));*/
+}
+
+.back-button {
+    background-color: #2f3136;
+    padding:2rem;
+    margin-right: auto;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+.post {
+    padding:1rem;
+    margin: 0rem 1rem 1rem 1rem;
+    flex: 0 1 auto;
+    background: #2f3136;
+    border-radius: 1rem;
+}
+
+.post-title {
+    font-size: 1.5rem;
+    text-decoration:none;
+    color:rgb(13, 99, 230);
+}
+
+.post-footer {
+    color:crimson;
+    text-align: right;
+}
+
+
