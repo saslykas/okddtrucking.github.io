@@ -31,7 +31,6 @@ body {
 }
 
 #left-sidebar {
-    justify-content: center;
     background: #2f3136;
 }
 
@@ -50,6 +49,7 @@ body {
 }
 
 .sb-list {
+    justify-content: center;
     display:flex;
     flex-direction: column;
     margin-top: 1rem;
